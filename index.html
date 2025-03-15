@@ -400,6 +400,22 @@ img {
             border: 0;
         }
         /*/////////*/
+.track {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .track:hover {
+            background-color: #f1f1f1;
+        }
+        .track-content {
+            display: none;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+/*//////////////////*/
     </style>
 </head>
 <body>
@@ -521,6 +537,48 @@ sciences and technics, Moulay Ismail University of Meknes (UMI)-Morocco.</p>
          <section id="Conference themes" style="background-color: #f8f9fa;">
 <div class="container"> 
                    <h2>Conference themes</h2>
+    /**/
+    <div class="container">
+    <h2>CONFERENCE TRACKS</h2>
+    <p>The conference includes a wide range of tracks covering various topics and subtopics in energy, computer science, engineering, applied sciences, and mathematics.</p>
+
+    <div class="track" onclick="toggleTrack('track1')">Track 1: Intelligent Control Systems for Power & Energy Management</div>
+    <div class="track-content" id="track1">This track covers smart grid technologies, automation, and energy optimization.</div>
+
+    <div class="track" onclick="toggleTrack('track2')">Track 2: Smart Cities Infrastructure for Sustainable Urban Development</div>
+    <div class="track-content" id="track2">This track focuses on sustainable architecture, smart transportation, and green energy.</div>
+
+    <div class="track" onclick="toggleTrack('track3')">Track 3: Advanced Technologies for Smart Cities Management</div>
+    <div class="track-content" id="track3">Topics include IoT, AI-based decision-making, and urban analytics.</div>
+
+    <div class="track" onclick="toggleTrack('track4')">Track 4: Mathematics & Optimization for Sustainability</div>
+    <div class="track-content" id="track4">Optimization techniques for resource management and sustainability modeling.</div>
+
+    <div class="track" onclick="toggleTrack('track5')">Track 5: Communication, Networking, & Broadcast Technology</div>
+    <div class="track-content" id="track5">Covers 5G, IoT networks, and high-speed communication systems.</div>
+
+    <div class="track" onclick="toggleTrack('track6')">Track 6: Computing, Processing, and Signal Analysis</div>
+    <div class="track-content" id="track6">Advanced computing methods, signal processing, and big data analysis.</div>
+
+    <div class="track" onclick="toggleTrack('track7')">Track 7: Data Science and Cybersecurity</div>
+    <div class="track-content" id="track7">Machine learning applications in security, data privacy, and threat detection.</div>
+
+    <div class="track" onclick="toggleTrack('track8')">Track 8: Advanced Technologies and Applications</div>
+    <div class="track-content" id="track8">Exploring cutting-edge technologies and their real-world applications.</div>
+</div>
+
+<script>
+    function toggleTrack(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+    /**/
    <p> The Conference covers research work in: <p/>
     <div class="themes-container">   
      <div class="themes-column">                   
