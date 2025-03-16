@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSEIS’25</title>
+    <!-- Intégration de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
+    <style>
+img {
+    width: 100%; /* Taille normale */
+    height: auto;
+}
+
+/* Réduction de l’image à 50% sur mobile */
+@media screen and (max-width: 768px) {
+    img {
+        width: 50% !important; /* !important pour forcer l'application */
+    }
+}
+        
+/*.................bar*/
+      .navbar {
+            background-color: #004080;
+            padding: 10px 0;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .navbar li {
+            margin: 0 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #002050;
+            border-radius: 5px;
+        }
+/**/
+        .submit-btn {
+    display: inline-block;
+    background-color: #ff6600; /* Couleur attrayante */
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #cc5500; /* Effet au survol */
+}
+/**/
+ .carousel-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .btn-custom {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-custom:hover {
+            background-color: #45a049;
+        }
+
+        /**/
+/*conference starts*/
+  
+
+        #countdown {
+            font-size: 2rem;
+            font-weight: bold;
+         /*   background: rgba(0, 0, 255, 0.1);*/
+            padding: 10px 10px;
+           color: yellow;
+            border-radius: 20px;
+          /*  box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);*/
+            display: inline-block;
+        }
+/* about th conference  */
+{
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        /*h2 {
+            color: #FFFF00;
+            font-size: 25px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }*/
+        p {
+            color: #555;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .highlight {
+            color: #16a085;
+            font-weight: bold;
+        }
+.footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: auto;
+            padding: 20px 0;
+        }
+/*header-title */
+.header-title  {
+            text-align: center;
+            font-size: 40px;
+            color: #2c3e50;
+            margin-top: auto;
+            padding: 20px 0;
+        }
+        
+         h1 {
+          
+             
+            color: #FFFF00;
+            font-size: 40px;
+            line-height: 1;
+            text-align: center;
+        }
+/**/
+
+  p1 {
+            color: #FF0000;
+            font-size: 30px;
+            line-height: 2;
+            text-align: center;
+        } 
+
+#paiement ul {
+    list-style: none;
+    padding: 0;
+}
+
+#paiement li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #0070ba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005ea6;
+}
+
+        /* Style du titre avec image de fond */
+        .header-title {
+            background: url('logo1.png') center/cover no-repeat;
+            color: black;
+            text-align: center;
+            padding: 2px;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Style des sponsors */
+        .sponsor-logo {
+            width: 150px;
+            margin: 10px;
+        }
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Ajuste la largeur */
+    margin: auto; /* Centre le formulaire */
+}
+
+label {
+    margin-top: 10px; /* Espacement entre les champs */
+}
+
+input, select, button {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* coloré section */
+       h2 {
+            font-size: 1rem;
+            font-weight: bold;
+            color: black;
+            background-color: #4CAF50; /*rgb(255, 255, 0); /* 🔵 yellew */
+         / *  border: 3px solid blue; /* 🔵 Bordure bleue */
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+         / *  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Effet lumineux */
+        }
+
+    
+section {
+    margin: 1px 0;  /* Réduit l'espace entre les sections */
+   /* min-height: 80vh;  Réduit la hauteur des sections */
+    padding: 2px 0;  /* Ajuste l'espace interne */
+}
+img {
+    width: 200px;   /* Largeur fixe */
+    height: 100px;  /* Hauteur fixe */
+    object-fit: cover; /* Ajuste l’image sans déformation */
+}
+
+/*............section colomne*/
+.themes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+/*.......................................*/
+#themes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Toute la hauteur de l'écran */
+    padding: 0;
+    margin: 0;
+}
+
+.themes-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.themes-column {
+    flex: 1; /* Chaque colonne prend 50% de l'espace */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Fond légèrement visible */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*...........................................*/
+/*.themes-column {
+    width: 45%; /* Deux colonnes équilibrées */
+    background: rgba(255, 255, 255, 0.2); /* Fond légèrement visible */
+    padding: 20px;
+    border-radius: 10px;
+}*/
+.image-speciale {
+    width: 400px;  /* Largeur spécifique */
+    height: auto;  /* Garde les proportions */
+}
+/*......................*/
+#galerie {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.8); /* Fond sombre */
+    color: white;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grille responsive */
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajuste l'image sans déformation */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1); /* Effet zoom au survol */
+}
+
+/*.......................*/
+  .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .tab-button {
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            background: #fff;
+            border-radius: 10px 10px 0 0;
+            margin: 0 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .tab-button.active {
+            background-color: #ffbf00;
+            color: black;
+        }
+
+        .schedule {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #ffbf00;
+        }
+
+        .schedule h2 {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-table th, .schedule-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .schedule-table th {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .schedule-table td {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        .time {
+            font-weight: bold;
+            color: black;
+        }
+
+        .table-content {
+            display: none;
+        }
+
+        .table-content.active {
+            display: block;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ffbf00;
+            color: black;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+.tab-button:not(.active) {
+    background-color: #f0f0f0; /* Ajoute une couleur de fond visible */
+    color: #333; /* Texte en noir pour plus de visibilité */
+    border: 1px solid #ddd; /* Bordure légère pour les différencier */
+}
+        /* google map*/
+           .map-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+        /*/////////*/
+.track {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .track:hover {
+            background-color: #f1f1f1;
+        }
+        .track-content {
+            display: none;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+/*//////////////////*/
+    </style>
+</head>
+<body>
+
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About the Conference</a></li>
+            <li><a href="#Organizer">Organizer</a></li>
+            <li><a href="#Conference themes">Conference themes</a></li> 
+             <li><a href="#Scientific impact">Scientific impact</a></li>
+            <li><a href="#Organization committee">Organization committee</a></li>
+            <li><a href="#Scientific committee">Scientific committee</a></li>
+            <li><a href="#Student">Student Committee</a></li>
+            <li><a href="#Authors Guidelines">Authors Guidelines</a></li>
+            <li><a href="#Full Paper Submission">Full Paper Submission</a></li>
+            <li><a href="#Registration Fee">Registration Fee</a></li>
+            <li><a href="#Event Venue">Event Venue</a></li>
+            <li><a href="#Payment Methods">Payment Methods</a></li>
+            <li><a href="#indexation">Indexing in Scopus</a></li>
+            <li><a href="#Important Dates">Important Dates</a></li>
+           <li><a href="#gallery">Gallery</a></li>       
+<li><a href="#Format of the event">Format of the event</a></li>
+<li><a href="#Congress Chairs">Congress Chairs</a></li>
+<li><a href="#Our Speakers">Our Speakers</a></li>
+<li><a href="#Our Sponsors">Our Sponsors</a></li>
+        </ul>
+    </nav>
+
+
+   <div id="conferenceCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#conferenceCarousel" data-bs-slide-to="4"></button>
+
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('logo1.png');">
+            <div class="carousel-caption text-center">
+
+    <P style="font-size: 25px; color: black; font-weight: bold; display: inline;">13-14-15 November 2025 FST- Errachidia- Morocco</P>
+         
+  <h1><img src="first.png" alt="First Icon" style="width: 50px; height: 70px;">International Conference on Sustainable Energy and Intelligent Systems.</h1>
+  
+       <h1>*** Hybrid Conference ***</h1>
+              
+
+                <br>
+<a href="https://votre-lien-de-soumission.com"   class="submit-btn">📢 Call for Papers</a>
+
+     <a href="https://votre-lien-de-soumission.com" class="submit-btn">SUBMIT YOUR PAPER</a>  <br>
+
+  <br>
+
+<p style="font-size: 20px; color: black; font-weight: bold; display: inline;">📅 Conference Starts in :</p>
+  <br>
+
+<div id="countdown"></div>
+ <script>
+       //  🕒 Date et heure de début de la conférence (à modifier)
+        const conferenceDate = new Date("2025-11-29T09:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = conferenceDate - now;
+
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML =
+                    `${days}days ${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                document.getElementById("countdown").innerHTML = "La conférence a commencé !";
+                clearInterval(countdownInterval);
+            }
+        }
+
+        // Mettre à jour le compte à rebours chaque seconde
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        // Initialisation immédiate
+        updateCountdown();
+    </script>
+
+            </div>
+        </div>
+
+<div class="carousel-item active" style="background-image: url('1.png');">
+            <div class="carousel-caption text-center">
+
+    <P style="font-size: 25px; color: black; font-weight: bold; display: inline;">13-14-15 November 2025 FST- Errachidia- Morocco</P>
+
+  <h1>Join Experts & Researchers in Sustainable Technology.</h1>
+
+
+                <br>
+<a href="https://votre-lien-de-soumission.com"   class="submit-btn">📢 Call for Papers</a>
+
+     <a href="https://votre-lien-de-soumission.com" class="submit-btn">SUBMIT YOUR PAPER</a>  
+
+   </div>
+        </div>
+
+        <div class="carousel-item active" style="background-image: url('3.png');">
+            <div class="carousel-caption text-center">
+
+    <P style="font-size: 25px; color: black; font-weight: bold; display: inline;">13-14-15 November 2025 FST- Errachidia- Morocco</P>
+
+  <h1>Join Experts & Researchers in Sustainable Technology.</h1>
+
+
+                <br>
+<a href="https://votre-lien-de-soumission.com"   class="submit-btn">📢 Call for Papers</a>
+
+     <a href="https://votre-lien-de-soumission.com" class="submit-btn">SUBMIT YOUR PAPER</a>  
+
+   </div>
+        </div>
+
+    <div class="carousel-item active" style="background-image: url('5.jpg');">
+            <div class="carousel-caption text-center">
+
+    <P style="font-size: 25px; color: black; font-weight: bold; display: inline;">13-14-15 November 2025 FST- Errachidia- Morocco</P>
+
+  <h1>Join Experts & Researchers in Sustainable Technology.</h1>
+
+
+                <br>
+<a href="https://votre-lien-de-soumission.com"   class="submit-btn">📢 Call for Papers</a>
+
+     <a href="https://votre-lien-de-soumission.com" class="submit-btn">SUBMIT YOUR PAPER</a>  
+
+   </div>
+        </div>
+
+
+
+   <div class="carousel-item active" style="background-image: url('Noor.jpg');">
+            <div class="carousel-caption text-center">
+
+    <P style="font-size: 25px; color: black; font-weight: bold; display: inline;">13-14-15 November 2025 FST- Errachidia- Morocco</P>
+
+  <h1>Join Experts & Researchers in Sustainable Technology.</h1>
+
+
+                <br>
+<a href="https://votre-lien-de-soumission.com"   class="submit-btn">📢 Call for Papers</a>
+
+     <a href="https://votre-lien-de-soumission.com" class="submit-btn">SUBMIT YOUR PAPER</a>  
+
+   </div>
+        </div>
+
+
+ </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#conferenceCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#conferenceCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+   
+
+             <section id="about" style="background-color: #f8f9fa;">
+<div class="container">
+                    <h2>About the Conference</h2>
+                    <p>The International Conference on Sustainable Energy and Intelligent Systems (ICSEIS'25) is a premier gathering of researchers, engineers, and industry
+ professionals dedicated to advancing sustainable energy solutions and intelligent system technologies.
+ This conference serves as a platform to exchange cutting-edge ideas, explore innovative methodologies, and foster collaboration among experts from academia and industry.
+With a focus on renewable energy, smart grids, energy-efficient systems, AI-driven automation, and embedded intelligent technologies,
+ ICSEIS'25 aims to address global challenges related to energy sustainability and digital transformation.
+ The event will feature keynote speeches from renowned experts, technical sessions, and networking opportunities to inspire groundbreaking discussions and future innovations.
+Join us to contribute to the future of sustainable and intelligent technologies that will shape the next generation of energy solutions.</p>
+                </section>
+ <section id="Organizer"style="background-color: #f8f9fa;">
+<div class="container">
+                    <h2>Organizer</h2>
+                    <p>The Conference will be organised by the Laboratory of Intelligent Systems, Materials, and Sustainable Energy (SIMED), faculty of
+sciences and technics, Moulay Ismail University of Meknes (UMI)-Morocco.</p>
+   <h2>Contact</h2>
+                <p>Email : icseis-25@gmail.com</p>
+                </section>
+
+
+
+         <section id="Conference themes" style="background-color: #f8f9fa;">
+    <div class="container">
+    <h2>CONFERENCE TRACKS</h2>
+    <p>The conference includes a wide range of tracks covering various topics and subtopics in energy, computer science, engineering, applied sciences, and mathematics.</p>
+
+    <div class="track" onclick="toggleTrack('track1')">Track 1: Intelligent Control Systems for Power & Energy Management</div>
+    <div class="track-content" id="track1">This track covers smart grid technologies, automation, and energy optimization.</div>
+
+    <div class="track" onclick="toggleTrack('track2')">Track 2: Smart Cities Infrastructure for Sustainable Urban Development</div>
+    <div class="track-content" id="track2">This track focuses on sustainable architecture, smart transportation, and green energy.</div>
+
+    <div class="track" onclick="toggleTrack('track3')">Track 3: Advanced Technologies for Smart Cities Management</div>
+    <div class="track-content" id="track3">Topics include IoT, AI-based decision-making, and urban analytics.</div>
+
+    <div class="track" onclick="toggleTrack('track4')">Track 4: Mathematics & Optimization for Sustainability</div>
+    <div class="track-content" id="track4">Optimization techniques for resource management and sustainability modeling.</div>
+
+    <div class="track" onclick="toggleTrack('track5')">Track 5: Communication, Networking, & Broadcast Technology</div>
+    <div class="track-content" id="track5">Covers 5G, IoT networks, and high-speed communication systems.</div>
+
+    <div class="track" onclick="toggleTrack('track6')">Track 6: Computing, Processing, and Signal Analysis</div>
+    <div class="track-content" id="track6">Advanced computing methods, signal processing, and big data analysis.</div>
+
+    <div class="track" onclick="toggleTrack('track7')">Track 7: Data Science and Cybersecurity</div>
+    <div class="track-content" id="track7">Machine learning applications in security, data privacy, and threat detection.</div>
+
+    <div class="track" onclick="toggleTrack('track8')">Track 8: Advanced Technologies and Applications</div>
+    <div class="track-content" id="track8">Exploring cutting-edge technologies and their real-world applications.</div>
+</div>
+
+<script>
+    function toggleTrack(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+ 
+                </section>
+
+ </section>
+ <section id="Scientific impact"style="background-color: #f8f9fa;">
+<div class="container">
+                    <h2>Scientific impact</h2>
+                 <ul>
+         <li> Publication of high-quality scientific articles, contributing to the
+advancement of knowledge in the fields of sustainable energy and
+intelligent systems. </li>
+                     <li> Presentation of new approaches, models, and algorithms, paving
+the way for optimized solutions in energy efficiency, automation,
+and intelligent resource management.</li>
+                   <li>Establishment of partnerships between research laboratories,
+academic institutions, and industrial partners to facilitate the
+execution of multidisciplinary research projects.</li>
+                      <li> Identification of strategic areas for technology transfer and the
+industrialization of innovations derived from academic research
+with a particular focus on the Daraa-Tafilalt region in Morocco.</li>
+                  </ul>
+
+                </section>
+
+    
+                <section id="Organization committee" style="background-color: #f8f9fa;">
+<div class="container">
+                   <h2>Organization committee</h2>
+   <p> The International Conference on Sustainable Energy and Intelligent Systems is organized by a dedicated team of experts from Faculty of Sciences and Techniques of Errachidia, 
+         Moulay Ismail University. The Organization Committee is responsible for ensuring the smooth execution of the conference, from technical program development to logistical coordination.  <p/>
+    <div class="themes-container">
+     <div class="themes-column">
+ <ul>
+
+                        <li> Pr. Abdellah Benami (FSTE-UMI),</li>
+                       <li> Pr. Hassouani Youssef (FSTE-UMI),</li>
+                       <li> Pr. El Mahjoub Boufounas (FSTE-UMI),</li>
+                       <li> Pr. El Alami Ali (FSTE-UMI),</li>
+                        <li> Pr. Jebbor Nawfal (FSTE-UMI),</li>
+                       <li> Pr. Abdelillah Amrani (FSTE-UMI),</li>
+                      <li> Pr. Najim Mansour (FSTE-UMI),</li>
+                      <li> Pr. Abdrrahman El Boukili (FSTE-UMI),</li>
+                       <li> Pr. Hamdaoui Mohamed (FSTE-UMI),</li>
+                       <li> Pr. Malika Ouhadou (FSTE-UMI),</li>
+                      
+
+                  
+                    </ul>
+        </div>
+ <div class="themes-column">
+            <ul>
+                      
+                       <li> Pr. Khazri Yassine (FSTE-UMI),</li>
+                        <li> Pr. Zakariae EL Idrissi (FSTE-UMI),</li>
+                       <li> Pr. Redouane Chaibi (FSTE-UMI),</li>
+                      <li> Pr. Moussa Kibbou (FSTE-UMI),</li>
+                         
+
+        </div>
+    </div>
+                </section>
+
+
+
+                <section id="Scientific committee" style="background-color: #f8f9fa;">
+<div class="container">
+                   <h2>Scientific committee</h2>
+               <p> The Scientific Committee of the International Conference on Sustainable Energy and Intelligent Systems 
+           is composed of distinguished researchers, academics and experts from various disciplines, including renewable energy, artificial intelligence, quantum technology, medical physics,
+                 telecommunications, and embedded systems, dedicated to ensuring the highest quality of scientific contributions <p/>
+    <div class="themes-container">
+     <div class="themes-column">
+ <ul>
+
+<li>Pr. Messaoudi Choukri, FSTE-UMI, Morocco</li>
+<li>Pr. Nadia Ouadoudi, FSTE-UMI, Morocco</li>
+<li>Pr. Abdelkarim Daoudia, FSTE-UMI, Morocco</li>
+<li>Pr. Rachid Taouil, FSTE-UMI, Morocco</li>
+<li>Pr. Jaouad Foshi, FSTE-UMI, Morocco</li>
+<li>Pr. Abdellah Benami, FSTE-UMI, Morocco</li>
+<li>Pr. Hassouani Youssef, FSTE-UMI, Morocco</li>
+<li>Pr. Houssine ABAALI, FSTE-UMI, Morocco</li>
+<li>Pr. El Mahjoub Boufounas, FSTE-UMI, Morocco</li>
+<li>Pr. El Alami Ali, FSTE-UMI, Morocco</li>
+<li>Pr. Jebbor Nawfal, FSTE-UMI, Morocco</li>
+<li>Pr. Mounir Hanine, FSTE-UMI, Morocco</li>
+ <li>Pr. Abdelillah Amrani, FSTE-UMI, Morocco</li>
+<li>Pr. Houssine Limouny, FSTE-UMI, Morocco</li>
+<li>Pr. Hassan Aynaou, FSTE-UMI, Morocco</li>
+<li>Pr. Najim Mansour, FSTE-UMI, Morocco</li>
+<li>Pr. Abdrrahman El Boukili, FSTE-UMI, Morocco</li>
+<li>Pr. Hamdaoui Mohamed, FSTE-UMI, Morocco</li>
+<li>Pr. Malika Ouhadou, FSTE-UMI, Morocco</li>
+<li>Pr. Khazri Yassine, FSTE-UMI, Morocco</li>
+<li>Pr. Zakariae EL Idrissi, FSTE-UMI, Morocco</li>
+<li>Pr. Redouane Chaibi, FSTE-UMI, Morocco</li>
+<li>Pr. Moussa Kibbou, FSTE-UMI, Morocco</li>
+
+                    </ul>
+        </div>
+ <div class="themes-column">
+            <ul>
+
+
+<li>Pr. ACHAOUI Younes FS Meknes, Morocco</li>
+<li>Pr. Azeroual Mohamed EST Meknes, Morocco</li>
+<li>Pr. Laith Najam, University of Mosul, Iraq</li>
+<li>Pr. BAATAOUI Aziz FST Errachidia, Morocco</li>
+<li>Pr. BEJJIT Lahcen EST Meknes, Morocco</li>
+<li>Pr. Dhruba Jyoti Gogoi, University Dibrugarh, India</li>
+<li>Pr. Moulay Brahim Sedra, ENSA Kénitra, Morocco</li>
+<li>Pr. BEN YAKHLEF Majid FP Taza, Morocco</li>
+<li>Pr. BENHALA Bachir FS Meknes, Morocco</li>
+<li>Pr. Atef El-Taher, Al-Azhar University, Egypt</li> 
+<li>Pr. BOSSOUFI Badre FS Fez, Morocco</li>
+<li>Pr. BOUHOU Samira FS Meknes, Morocco</li>
+<li>Pr. BRI Seddik EST Meknes, Morocco</li>
+<li>Pr. DAS Sudipta University of Bengal, India</li>
+<li>Pr. BROURI Adil ENSAM Meknes, Morocco</li>
+<li>Pr. CHADLI Hassan EST Meknes, Morocco</li>
+<li>Pr. DEROUICH Aziz EST Fez, Morocco</li>
+<li>Pr. Ahmad Azar, Prince Sultan University, Saudi Arabia</li>
+<li>Pr. EL ALAMI Rachid FSDM Fez, Morocco</li>
+<li>Pr. EL AMRANI Aumeur FST Errachidia, Morocco</li>
+ <li>Pr. EL FATHI Amine FST Al-Hoceima, Morocco</li>
+<li>Pr. Mohamed Riduan ABID, Columbus State University, USA</li>
+<li>Pr. EL GHZAOUI Mohammed FSDM Fez, Morocco</li>
+                 </ul>
+        </div>
+         <div class="themes-column">
+            <ul>
+                
+<li>  Pr. EL MALKI Zakaria EST Meknes, Morocco</li>
+<li>  Pr. OULD BOUAMAMA Belkacem University of Lille, France</li>
+<li>  Pr. EL MARKHI Hassane FST Fez, Morocco</li>
+<li>  Pr. Saad Motahhir, ENSA Fez, Morocco</li>
+<li>  Pr. KHALIS Mohamed FS Meknes, Morocco</li>
+<li>  Pr. TISSIR El Houssaine FSDM Fez, Morocco</li>
+<li>  Pr. Lhoussine Elmaimouni, FP ouarzazate, Morocco</li>
+                    </ul>
+
+        </div>
+    </div>
+                </section>
+   <section id="Student" style="background-color: #f8f9fa;">
+<div class="container">
+                   <h2>Student Committee</h2>
+   <p> .................... <p/>
+    <div class="themes-container">
+     <div class="themes-column">
+ <ul>
+
+                       <li> Fadwa Baijou  </li>
+                        <li>  Rachid Lijane </li>
+                      <li>  Fatima Zahra Boukri </li>
+                  
+            
+                    </ul>
+        </div>
+ <div class="themes-column">
+            <ul>
+                 <li>   Tahir Toghrai </li>
+                       <li>   Hicham Lekbich </li>
+                          <li>   Hassani Nouhayla </li>
+                     <li>    Jawhar Aiboudi </li>
+        </div>
+    </div>
+                </section>
+<section id="Authors Guidelines" style="background-color: #f8f9fa;">
+<div class="container">
+    <h2>Authors Guidelines</h2>
+     <p> All submissions must be in English. </p>
+    <p> All submitted papers must be original and not published or presented elsewhere.
+              If you submit your paper for <strong>Springer Proceedings in Energy</strong> series, please use one of the official templates:</p>
+
+    <h3>📄 LaTeX Template</h3>
+    <p>
+        Springer provides a LaTeX template that follows their publication standards.
+        You can download it from Overleaf:
+        <a href="https://www.overleaf.com/latex/templates/springer-nature-latex-template/myxmhdsbzkyd" target="_blank">
+            Download LaTeX Template
+        </a>.
+    </p>
+
+    <h3>📝 Microsoft Word Template</h3>
+    <p>
+        If you prefer using Microsoft Word, you can download the official template here:
+        <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">
+            Download Word Template
+        </a>.
+    </p>
+
+    <h3>📌 Additional Instructions</h3>
+    <p>Make sure to follow Springer’s formatting guidelines to ensure a smooth submission and approval process.</p>
+</section>
+
+
+<section id="Full Paper Submission" style="background-color: #f8f9fa;">
+<div class="container">
+    <h2>📝 Full Paper Submission</h2>
+<p> Submit your full paper here following the official template and guidelines. Ensure that your submission meets the required formatting and deadlines.<p>
+<a href="https://votre-lien-de-soumission.com" class="submit-btn">Submit Now</a>
+</section>
+
+
+<section id="Registration Fee"style="background-color: #f8f9fa;">
+<div class="container">
+                    <h2>Registration Fee</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Before .../.../... </th>
+                                <th>After .../.../...</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD Students</td>
+                                <td>100€</td>
+                                <td>150€</td>
+                            </tr>
+                            <tr>
+                                <td>Researchers</td>
+                                <td>200€</td>
+                                <td>250€</td>
+                            </tr>
+                            <tr>
+                                <td>Professional</td>
+                                <td>300€</td>
+                                <td>350€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+  <!-- Nouvelle section : Ce que les frais incluent -->
+    <h3>Registration Fee Includes</h3>
+    <ul class="list-group">
+        <li class="list-group-item">✅ Access to all sessions and conferences</li>
+        <li class="list-group-item">✅ Welcome kit (badge, program, conference documents)</li>
+        <li class="list-group-item">✅ Coffee breaks and refreshments</li>
+        <li class="list-group-item">✅ Lunches during the conference</li>
+        <li class="list-group-item">✅ Certificate of participation</li>
+        <li class="list-group-item">✅ Access to conference proceedings and publications</li>
+    </ul>
+                </section>
+
+<section id="Event Venue" style="background-color: #f8f9fa;">
+<div class="container">
+                   <h2>Event Venue</h2>
+   <p> Here is the exact location of the conference: <p/>
+    
+     
+ <div class="map-container">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.7696903462659!2d-4.4567974!3d31.93930285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd984a404b35d00d%3A0xc08aa98998952aac!2sFacult%C3%A9%20des%20Sciences%20et%20Techniques%2C%20P21%2C%20Errachidia!5e1!3m2!1sfr!2sma!4v1739196401129!5m2!1sfr!2sma" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"allowfullscreen=""
+    loading="lazy"></iframe>
+
+        </div>
+           
+        </div>
+  
+                </section>
+
+
+
+<section id="Payment Methods"style="background-color: #f8f9fa;">
+<div class="container">
+    <h2>Payment Methods</h2>
+    <p>For registration, we accept bank transfer as the primary payment method. Thank you for your cooperation :</p>
+
+    <ul>
+        <li>🏦 Bank transfer</li>
+            <li> Bank : .......................</li>
+<li> Bank Account Number (RIB): ...................</li>
+<li> Account Name : ...............................</li>
+    </ul>
+
+    <p><strong>Instructions :</strong> Once your payment is completed, please send us a confirmation to <a href="mailto:contact@congres.com">contact@ICSEIS.com</a>.</p>
+
+    <!-- Exemple de bouton de paiement PayPal -->
+
+</section> 
+
+  <section id="indexation"style="background-color: #f8f9fa;">
+<div class="container">
+                    <h2>Indexing in Scopus</h2>
+                    <p>The proceedings of ICSEIS’25 will be published in the Springer
+Proceedings in Energy series, as well as in IEEE.</p>
+       <img src="springer.png" alt="Springer Book" class="img-fluid mt-3" style="max-width: 300px;">
+ <img src="spring.png" alt="Springer Book" class="img-fluid mt-3" style="max-width: 300px;">
+    <img src="scopus.png" alt="Springer Book" class="img-fluid mt-3" style="max-width: 300px;">
+    </div>
+
+                </section>
+
+
+
+
+<section id="Important Dates"style="background-color: #f8f9fa;">
+<div class="container">
+    <h2>Important Dates</h2>
+<p> Stay updated with the key deadlines for the conference. Make sure to submit your papers, register on time, and follow the schedule for important announcements.  <p>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>📄 Full Paper Submission Opens</td>
+                <td>May, 15, 2025</td>
+            </tr>
+            <tr>
+                <td>⏳ Deadline for Paper Submission</td>
+                <td>August. 30 , 2025</td>
+            </tr>
+            <tr>
+                <td>📢 Notification of Paper Acceptance</td>
+                <td>September, 30, 2025</td>
+            </tr>
+            <tr>
+                <td>⏳ Last Date of Registration</td>
+                <td>October 10-11-12, 2025</td>
+            </tr>
+                <tr>
+                <td> 📌 Conference Date</td>
+                <td>October 10-11-12, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<section id="gallery"style="background-color: #f8f9fa;">
+<div class="container">
+    <h2>gallery</h2>
+    <div class="gallery-container">
+        <img src="5.jpg" alt="Image 1">
+        <img src="4.jpg" alt="Image 2">
+        <img src="Noor.jpg" alt="Image 3">
+        <img src="3.png" alt="Image 4">
+        <img src="2.png" alt="Image 5">
+        <img src="1.png" alt="Image 6">
+    </div>
+</section>
+  
+<section id="Format of the event"style="background-color: #f8f9fa;">
+                     <div class="container">
+                    <h2>Format of the event</h2>
+                    <p>The International Conference on Sustainable Energy and Intelligent
+Systems will feature a dynamic and interactive format designed to
+foster knowledge exchange, collaboration, and innovation. The event
+will include:</p>
+                <ul>
+
+                       <li> <b>Keynote Speeches</b>: Renowned experts from academia,
+industry, and research institutions will share insights on emerging
+trends and advancements in sustainable energy and intelligent
+systems.  </li>
+                 <li>   <b>Technical Sessions</b>: Presentations of high-quality scientific
+papers covering cutting-edge research and applications in the field. </li>
+                    <li>  <b>Panel Discussions</b>: Interactive debates with experts and
+stakeholders addressing critical challenges and future directions.</li>
+ <li> <b>Poster Sessions</b>: A dedicated platform for researchers
+to present their work in an engaging and interactive format,
+encouraging discussion and feedback.</li>
+<li> <b>Networking Opportunities</b>: Dedicated sessions to facilitate
+collaborations between researchers, industry professionals, and
+policymakers.</li>
+                    </ul>
+    <div class="tabs">
+    <button class="tab-button active" onclick="showSchedule(1)">Day 1 <br> July 07, 2025</button>
+    <button class="tab-button" onclick="showSchedule(2)">Day 2 <br> July 08, 2025</button>
+    <button class="tab-button" onclick="showSchedule(3)">Day 3 <br> July 09, 2025</button>
+</div>
+
+<div class="schedule">
+    <div id="day1" class="table-content active">
+        <h2>Morning</h2>
+        <table class="schedule-table">
+            <tr><td class="time">07:30-08:00</td><td>Registrations and Badge Pickup</td></tr>
+            <tr><td class="time">08:00-08:20</td><td>Opening, Welcome and Announcements</td></tr>
+            <tr><td class="time">08:20-10:40</td><td>Keynote Session</td></tr>
+            <tr><td class="time">10:40-10:55</td><td>Networking Break</td></tr>
+            <tr><td class="time">10:55-13:40</td><td>Keynote Session</td></tr>
+        </table>
+
+        <h2>Afternoon</h2>
+        <table class="schedule-table">
+            <tr><td class="time">13:40-14:10</td><td>Networking Lunch</td></tr>
+            <tr><td class="time">14:10-15:30</td><td>Scientific Session</td></tr>
+        </table>
+    </div>
+
+    <div id="day2" class="table-content">
+        <h2>Morning</h2>
+        <table class="schedule-table">
+            <tr><td class="time">08:00-09:00</td><td>Keynote Speech</td></tr>
+            <tr><td class="time">09:00-10:30</td><td>Technical Session 1</td></tr>
+            <tr><td class="time">10:30-10:50</td><td>Coffee Break</td></tr>
+            <tr><td class="time">10:50-12:30</td><td>Technical Session 2</td></tr>
+        </table>
+
+        <h2>Afternoon</h2>
+        <table class="schedule-table">
+            <tr><td class="time">12:30-14:00</td><td>Lunch Break</td></tr>
+            <tr><td class="time">14:00-15:30</td><td>Panel Discussion</td></tr>
+        </table>
+    </div>
+
+    <div id="day3" class="table-content">
+        <h2>Morning</h2>
+        <table class="schedule-table">
+            <tr><td class="time">08:00-09:00</td><td>Round Table Discussion</td></tr>
+            <tr><td class="time">09:00-10:30</td><td>Technical Session 3</td></tr>
+            <tr><td class="time">10:30-10:50</td><td>Coffee Break</td></tr>
+            <tr><td class="time">10:50-12:30</td><td>Final Keynote</td></tr>
+        </table>
+
+        <h2>Afternoon</h2>
+        <table class="schedule-table">
+            <tr><td class="time">12:30-14:00</td><td>Lunch Break</td></tr>
+            <tr><td class="time">14:00-15:30</td><td>Closing Ceremony</td></tr>
+        </table>
+    </div>
+</div>
+</section>
+
+<section id="Congress Chairs" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center">Congress Chairs</h2>
+        <div class="row text-center">
+            <!-- Chair 1 -->
+            <div class="col-md-5">
+                <div class="chair-img">
+                    <img src="najim.png" alt="Chair 1" class="img-fluid rounded-circle" style="width: 200px;">
+                </div>
+                <h5>Pr. Najim MANSOUR</h5>
+                      <p>FSTE-Moulay Ismail University</p>
+            </div>
+            <!-- Chair 2 -->
+            <div class="col-md-5">
+                <div class="chair-img">
+                    <img src="boukili.png" alt="Chair 2" class="img-fluid rounded-circle" style="width: 200px";>
+                </div>
+                <h5>Pr. Abderrahman EL BOUKILI</h5>
+                <p>FSTE-Moulay Ismail University</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Honor Commitee" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center">Honor Commitee</h2>
+        <div class="row text-center">
+            <!-- Chair 1 -->
+            <div class="col-md-5">
+                <div class="chair-img">
+                    <img src="president.png" alt="H 1" class="img-fluid rounded-circle" style="width: 200px;">
+                </div>
+                <h5>  Pr. Ahmed MOUCHTACHI</h5>
+                <p> President of Moulay Ismail University </p>
+            </div>
+            <!-- Chair 2 -->
+            <div class="col-md-5">
+                <div class="chair-img">
+                    <img src="doyen.png" alt="H 2" class="img-fluid rounded-circle" style="width: 200px";>
+                </div>
+                <h5>Pr. Jaouad Foshi </h5>
+                <p> Dean of the Faculty of Sciences and Technics of Errachidia</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Our Speakers" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center">Our Speakers</h2>
+        <div class="row text-center">
+            <!-- Speaker 1 -->
+            <div class="col-md-4">
+                <img src="sedra.png" alt="Speaker 1" class="img-fluid rounded-circle" style="width: 200px;">
+                <h4>Pr. Moulay Brahim Sedra </h4>
+                <p>Professor of Theoritical Physics </p>
+                <p><a href="https://www.scopus.com/authid/detail.uri?authorId=7004030657" class="btn btn-primary btn-sm">Voir Profil</a></p>
+            </div>
+            <!-- Speaker 2 -->
+            <div class="col-md-4">
+                <img src="pho.jpg" alt="Speaker 2" class="img-fluid rounded-circle" style="width: 200px;">
+                <h4>Prof. ??????????</h4>
+                <p>Expert in Embedded Systems</p>
+                <p><a href="https://www.linkedin.com" class="btn btn-primary btn-sm">Voir Profil</a></p>
+            </div>
+        <!-- Speaker 3 -->
+            <div class="col-md-4">
+                <img src="pho.jpg" alt="Speaker 2" class="img-fluid rounded-circle" style="width: 200px;">
+                <h4>Prof. ??????????</h4>
+                <p>Expert in Embedded Systems</p>
+                <p><a href="https://www.linkedin.com" class="btn btn-primary btn-sm">Voir Profil</a></p>
+            </div>
+        <!-- Speaker 4 -->
+            <div class="col-md-4">
+                <img src="HOF.png" alt="Speaker 2" class="img-fluid rounded-circle" style="width: 200px;">
+                <h4>Prof. Hicham Oufettoul</h4>
+                <p>  Embedded Systems</p>
+                <p><a href="https://www.scopus.com/authid/detail.uri?authorId=57481389000" class="btn btn-primary btn-sm">Voir Profil</a></p>
+            </div>
+        <!-- Speaker 2 -->
+            <div class="col-md-4">
+                <img src="pho.jpg" alt="Speaker 2" class="img-fluid rounded-circle" style="width: 200px;">
+                <h4>Prof. ??????????</h4>
+                <p>Expert in Embedded Systems</p>
+                <p><a href="https://www.linkedin.com" class="btn btn-primary btn-sm">Voir Profil</a></p>
+            </div>
+
+            <!-- Speaker 5 -->
+            <div class="col-md-4">
+                <img src="pho.jpg" alt="Speaker 3" class="img-fluid rounded-circle" style="width: 200px;">
+                <h4>Dr. ????????</h4>
+                <p>Researcher in IoT and Telecommunications</p>
+                <p><a href="https://www.linkedin.com" class="btn btn-primary btn-sm">Voir Profil</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Our Sponsors" style="background-color: #eef5f9;">
+    <div class="container">
+        <h2 class="text-center">Our Sponsors</h2>
+<p>  We would like to express our sincere gratitude to our sponsors for their generous support. Their contribution plays a crucial role in making this conference a success.<p>
+        <div class="row text-center">
+            <!-- Sponsor 1 -->
+            <div class="col-md-3">
+                <img src="spon1.png" alt="Sponsor 1" class="img-fluid" style="max-width: 150px;">
+                
+            </div>
+            <!-- Sponsor 2 -->
+            <div class="col-md-3">
+                <img src="spon2.jpg" alt="Sponsor 2" class="img-fluid" style="max-width: 150px;">
+                
+            </div>
+            <!-- Sponsor 3 -->
+            <div class="col-md-3">
+                <img src="spon3.png" alt="Sponsor 3" class="img-fluid" style="max-width: 150px;">
+                
+            </div>
+            <!-- Sponsor 4 -->
+            <div class="col-md-3">
+                <img src="logo4.png" alt="Sponsor 4" class="img-fluid" style="max-width: 150px;">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pied de page -->
+
+<div class="footer">
+    &copy; ICSEIS’25 | Tous droits réservés.
+</div>
+<!-- Pied de page -->
+<!-- Bouton Scroll Up -->
+<div class="scroll-top" onclick="scrollToTop()">⬆</div>
+
+<script>
+function showSchedule(dayNumber) {
+    document.querySelectorAll(".table-content").forEach(content => {
+        content.classList.remove("active");
+    });
+
+    document.querySelectorAll(".tab-button").forEach(button => {
+        button.classList.remove("active");
+    });
+
+    document.getElementById("day" + dayNumber).classList.add("active");
+    document.querySelectorAll(".tab-button")[dayNumber - 1].classList.add("active");
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+    
+</body>
+</html>
