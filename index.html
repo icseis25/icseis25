@@ -512,6 +512,19 @@ img {
             color: #333;
                 text-align: justify; /* Ensures content is centered */
         }
+        /*//////////*/
+        .image-container {
+  display: flex;
+  gap: 10px; /* Espacement entre les images */
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border: 1px solid #ddd; /* Bordure pour voir les limites */
+}
+
 /*//////////////////*/
     </style>
 </head>
@@ -1309,6 +1322,7 @@ policymakers.</li>
 </section>
 <section id="Our Sponsors" style="background-color: #eef5f9;">
     <div class="container">
+                        <div class="image-container">
         <h2 class="text-center">Our Sponsors</h2>
 <p>  We would like to express our sincere gratitude to our sponsors for their generous support. Their contribution plays a crucial role in making this conference a success.<p>
         <div class="row text-center">
@@ -1319,9 +1333,8 @@ policymakers.</li>
             </div>
             <!-- Sponsor 2 -->
             <div class="col-md-3">
-                <img src="spon2.jpg" alt="Sponsor 2" style="width: 100%; height: auto">
-                
-            </div>
+                <img src="spon2.jpg" alt="Sponsor 2">
+                </div>
             <!-- Sponsor 3 -->
             <div class="col-md-3">
                 <img src="spon3.png" alt="Sponsor 3" style="width: 100%; height: auto">
@@ -1358,7 +1371,9 @@ policymakers.</li>
                 
             </div>
         </div>
-    </div>
+            </div>
+
+                        </div>
 </section>
 <section id="Event Venue" style="background-color: #f8f9fa;">
 <div class="container">
